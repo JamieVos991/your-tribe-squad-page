@@ -1,0 +1,27 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  
+}
+
+main {
+    height: 100dvh;
+    display: grid;
+    place-content: center;
+    place-items: center;
+}
+
+article {
+height: 400px;
+aspect-ratio: 1/1;
+background: wheat;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+gap: 10px;
+}
