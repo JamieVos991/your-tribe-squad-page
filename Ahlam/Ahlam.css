@@ -1,22 +1,97 @@
 body {
     margin: 0;
-    background-color: rgb(173, 95, 245);
+    display: grid;
+    background-color: #F9F1E8;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    -webkit-text-stroke: black;
+
 }
 
 header {
-    background-color: rgb(199, 144, 251);
-    padding: 1em;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    background-color: #826851;
+    gap: 20px;
 }
 
 h1 {
     text-align: center;
-    color: rgb(248, 232, 8);
-    -webkit-text-stroke: 0.3px black;
-    text-decoration: underline rgb(248, 232, 8);
+    color: #DEA8A2;
+    text-decoration: underline #DEA8A2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    /* lichte 3D text */
+
+}
+
+.search-container {
+    position: relative;
+    display: inline-block;
+}
+
+#searchInput {
+    border-radius: 10px;
+    border: 2px solid #3f3d3a;
+    background-color: #F9F1E8;
+    padding: 3px 35px 3px 10px;
+}
+
+.search-icon {
+    position: absolute;
+    stroke:#826851;
+    pointer-events: none; /* Typen is mogelijk hierdoor*/
+    right: 10px;
+    top: 10%;
+}
+
+h2 {
+    margin-left: 30px;
+    color: #826851;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 
 }
 
 section {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax (220px 1fr));
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1px;
+
+}
+
+.student {
+    display: grid;
+    text-align: center;
+    background-color: #DEA8A2;
+    border: 2px solid #826851;
+    border-radius: 15px;
+}
+
+.studentFigure img {
+    width: 200px;
+    /* breedte van de kleinere foto's */
+    height: 200px;
+    /* zelfde hoogte voor alle foto's */
+    object-fit: cover;
+    /* vult de box netjes en snijdt teveel af */
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+
+}
+
+.studentFigure figcaption {
+    color: #F9F1E8;
+}
+
+/* Media queries */
+@media (max-width: 480px) {
+    section {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 1000px) {
+    section {
+        grid-template-columns: 1fr 1fr;
+    }
 }
