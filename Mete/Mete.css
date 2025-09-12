@@ -9,6 +9,7 @@ header{
     display: grid;
     grid-template-columns: 1fr auto; 
     align-items: center;
+    height: 150px;
 }
 
 h1 {
@@ -19,10 +20,98 @@ h1 {
     text-shadow: 4px 4px 4px rgba(0,0,0,0.2); 
 }
 
+h2{
+    font-size: 2rem;
+}
+
+p{
+    font-size: 1.3rem;
+}
+
+.article-text h2,
+.article-text p {
+  margin: 0;
+}
+
 .search-container{
     display: flex;
     align-items: center;
-    gap: 0.5em;
+    gap: 1em;
     margin-right: 2rem;
 }
 
+.search-input {
+  width: 15rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.9rem;
+}
+
+img{
+    height: 200px;
+    width: 300px;
+    border-radius: 10px;
+
+}
+
+.articles-section{
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 1rem;
+    padding: 1rem;
+}
+
+
+
+.article-left {
+    display: grid;
+    grid-template-columns: 1fr auto; 
+    width: 55%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+
+
+}
+
+
+.article-right {
+    display: grid;
+    grid-template-columns: 1fr auto; 
+    width: 55%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin-left: auto;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+
+}
+
+.article-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+    margin: 15px;
+}
+
+footer{
+    height: 120px;
+    background-color: #B2E6A8;
+    display: grid;
+    place-items: center;
+
+}
+
+.socials{
+    display: grid;
+    grid-template-columns: 1fr 1fr auto; 
+    width: 60%;
+}
+
+.github-link{
+    font-size: 2.7rem;
+    color: #333; 
+ 
+}
+
+.github-link span{
+    font-size: 1.7rem;
+}
