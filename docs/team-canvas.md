@@ -1,4 +1,4 @@
-# Your Tribe - Squadpage
+# Your Tribe - Squad page
 
 ## Team Canvas (Maandag)
 
