@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(noise.png);
+    font-family: sans-serif;
+}
+
+main {
+    display: grid;
+}
+
+svg {
+    color: white;
+}
+
+nav {
+    height: 60px;
+    background: #F7F4EA;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+    padding: 0 20px;
+
+    ul:nth-of-type(1) {
+        list-style: none;
+        display: flex;
+        gap: 10px;
+
+        li  {
+            background: darkgrey;
+            width: 40px;
+            border-radius: 50%;
+            aspect-ratio: 1/1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    a {
+        height: 18px;
+    }
+
+    ul:nth-of-type(2) {
+        list-style: none;
+
+        li:nth-of-type(1) {
+            background: darkgrey;
+            width: 40px;
+            border-radius: 50%;
+            aspect-ratio: 1/1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+}
+
+section:nth-of-type(1) {
+    min-height: 50px;
+    display: grid;
+    background: #F7F4EA;
+    place-items: center;
+    padding: 20px;
+
+    input[type="search"] {
+        background: rgb(225, 225, 225);
+        border: none;
+        border-radius: 20px;
+        width: 100%;
+        height: 40px;
+        padding: 0 20px;
+    }
+
+    div:first-child {
+        position: relative;
+        width: 100%;
+    }
+
+    .input-knop {
+        background: darkgrey;
+        position: absolute;
+        height: 40px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-radius: 50%;
+        width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+section:nth-of-type(2) {
+    min-height: fit-content;
+    display: flex;
+    background: rgb(229, 229, 229);
+    flex-direction: column;
+    padding: 17px 0 10px 0;
+    gap: 15px;
+
+    article {
+        width: 80%;
+        height: 100px;
+        background: #F7F4EA;
+        display: flex;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;        
+        gap: 5px;
+
+        .image {
+            width: 50%;
+            list-style: none;
+        }
+
+        .info {
+            width: 50%;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 10px;
+            /* gap: 5px; */
+        }
+
+        p {
+            font-size: 80%;
+        }
+
+        img {
+            grid-column: 2;
+            grid-row: 1 / 3;  
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        #asd {
+            background-image: url(/assets/squad1j-mete.jpg);
+        }
+    }
+
+    article:nth-of-type(odd) {
+        align-self: flex-start;
+    }
+
+    article:nth-of-type(even) {
+        align-self:flex-end;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    background: rgb(229, 229, 229);
+    z-index: 1;
+    padding: 15px;
+    justify-content: center;
+    min-height: fit-content;
+
+    h1 {
+        font-size: 10vw;
+        text-transform: uppercase;
+    }   
+
+    span {
+        font-weight: 100;
+    }
+
+    p {
+        font-style: italic;
+        color: #adadad;
+        font-size: 70%;
+    }
+}
+
+footer {
+    height: 100px;
+    background: #F7F4EA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+@media (min-width: 390px) {
+    section:nth-of-type(2) article {
+        min-height: fit-content;
+    }
+}
