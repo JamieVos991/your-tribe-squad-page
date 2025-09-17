@@ -1,27 +1,131 @@
-*, *::after, *::before {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-  
+    background-color: #F9F1E8;
+    font-family: sans-serif;
 }
 
-main {
-    height: 100dvh;
+/* class zodat de sidebar rechts geplaatst wordt*/
+.grid {
     display: grid;
-    place-content: center;
-    place-items: center;
+    /* 60px sidebar, de rest ernaast*/
+    grid-template-columns: 60px 1fr;
+    min-height: 100vh;
 }
 
-article {
-height: 400px;
-aspect-ratio: 1/1;
-background: wheat;
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-gap: 10px;
+aside {
+    /* sidebar blijft staan bij scrollen */
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 60px;
+    /* volledige hoogte van het scherm */
+    height: 100vh;
+    background-color: #826851;
+    align-items: center;
+    padding-top: 20px;
+    top: 0;
+    left: 0;
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
 }
+
+aside svg {
+    color: white;
+}
+
+.welkom {
+    /* voor sidebar */
+    margin-left: 80px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    font-size: x-large;
+
+    p {
+        color: grey;
+        opacity: 0.5;
+        font-size: 10px;
+    }
+
+}
+
+.students {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.students article {
+    display: flex;
+    /* volledige breedte va het scherm*/
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+}
+
+.students article:nth-child(odd) {
+    justify-content: flex-start;
+}
+
+.students article:nth-child(even) {
+    justify-content: flex-end;
+}
+
+.student-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    border-radius: 5px;
+    background-color: #DEA8A2;
+    /* volledige breedte van article*/
+    width: 100%;
+    max-width: none;
+    margin: 0;
+
+    p {
+        color: #F9F1E8;
+        font-size: 30px;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+    }
+}
+
+.students article:nth-child(odd) .student-card {
+    flex-direction: row;
+    padding-left: 10px;
+
+}
+
+.students article:nth-child(even) .student-card {
+    flex-direction: row-reverse;
+    padding-right: 10px;
+}
+
+.student-card img {
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+    object-fit: cover;
+}
+
+/*.first {
+    height: 400px;
+    aspect-ratio: 1/1;
+    background: wheat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}*/
