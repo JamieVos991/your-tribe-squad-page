@@ -33,7 +33,7 @@ Deze leertaak wordt behandeld in week 2 en 3 van Sprint 1. Er worden verschillen
 
 Deze opdracht is done als:
 
-- [ ] Je hebt met een team iteratief gewerkt <!-- connecting commits tekening evalueren -->
+- [x] Je hebt met een team iteratief gewerkt <!-- connecting commits tekening evalueren -->
 - [ ] Je hebt het team-canvas ingevuld en toegevoegd aan een GitHub Issue van de repository waar jullie in samenwerken, en je hebt de samenwerking geëvalueerd in een kampvuursessie <!-- Piek en dal tekening maken en evalueren in teamcanvas issue -->
 - [ ] Je hebt een breakdown schets gemaakt voor het responsive ontwerp en dit aan een GitHub Issue toegevoegd
 - [ ] Je hebt verschillende variaties in Figma gemaakt voor de layout en de visuele hiërarchie en dit aan een GitHub Issue toegevoegd
