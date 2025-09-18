@@ -1,33 +1,37 @@
 body {
     margin: 0;
-    display: grid;
     background-color: #F9F1E8;
     font-family: 'Raleway', sans-serif;
-    font-weight: 300;
-    -webkit-text-stroke: black;
-
+    font-weight: 270px;
 }
 
 header {
-    display: grid;
-    grid-template-columns: 1fr auto;
+    display: flex;
+    /* horizontaal in het midden */
+    justify-content: center;
     align-items: center;
     background-color: #826851;
+    padding: 2rem;
     gap: 20px;
-}
 
-h1 {
-    text-align: center;
-    color: #DEA8A2;
-    text-decoration: underline #DEA8A2;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    /* lichte 3D text */
+    p {
+        justify-self: center;
+        color: #DEA8A2;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
 
+    h1 {
+        margin: 0;
+        color: #DEA8A2;
+        text-decoration: underline #DEA8A2;
+        /* lichte 3D text */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
 }
 
 .search-container {
     position: relative;
-    display: inline-block;
+    padding-left: 10rem;
 }
 
 #searchInput {
@@ -39,59 +43,71 @@ h1 {
 
 .search-icon {
     position: absolute;
-    stroke:#826851;
-    pointer-events: none; /* Typen is mogelijk hierdoor*/
+    stroke: #826851;
     right: 10px;
     top: 10%;
+    /* Typen is mogelijk hierdoor*/
+    pointer-events: none;
 }
 
 h2 {
     margin-left: 30px;
     color: #826851;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
 }
 
-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1px;
-
+.students {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
 }
 
-.student {
-    display: grid;
-    text-align: center;
-    background-color: #DEA8A2;
-    border: 2px solid #826851;
-    border-radius: 15px;
-}
-
-.studentFigure img {
-    width: 200px;
-    /* breedte van de kleinere foto's */
+.students article {
+    display: flex;
+    width: 100%;
     height: 200px;
-    /* zelfde hoogte voor alle foto's */
-    object-fit: cover;
-    /* vult de box netjes en snijdt teveel af */
+}
+
+.students article:nth-child(odd) {
+    justify-content: flex-start;
+}
+
+.students article:nth-child(even) {
+    justify-content: flex-end;
+}
+
+.student-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    border-radius: 10px;
+    background-color: #DEA8A2;
+    width: 70%;
+
+    p {
+        color: #F9F1E8;
+        font-size: 30px;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+    }
+}
+
+.students article:nth-child(odd) .student-card {
+    flex-direction: row;
+        padding-left: 10px;
+
+}
+
+.students article:nth-child(even) .student-card {
+    flex-direction: row-reverse;
+        padding-right: 10px;
+}
+
+.student-card img {
+    width: 300px;
+    height: 200px;
     border-radius: 10px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
-
-}
-
-.studentFigure figcaption {
-    color: #F9F1E8;
-}
-
-/* Media queries */
-@media (max-width: 480px) {
-    section {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 1000px) {
-    section {
-        grid-template-columns: 1fr 1fr;
-    }
+    object-fit: cover;
 }
