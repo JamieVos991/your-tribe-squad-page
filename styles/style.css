@@ -1,3 +1,4 @@
+/* Reset alle margins, paddings en stel box-sizing in op border-box voor consistentie */
 *,
 *::after,
 *::before {
@@ -6,12 +7,14 @@
     box-sizing: border-box;
 }
 
+/* Stel de achtergrondkleur van de website in en zorg dat body 100% hoogte heeft */
 body {
     background-color: #F7F4EA;
     margin: 0;
     height: 100%;
 }
 
+/* font-familie vor h1, h2, h3 en p */
 h1,
 h2,
 h3,
@@ -19,14 +22,9 @@ p {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header {
-    /* background-color: #826851;
-    height: 100vh;
-    width: 7%; */
 
-}
-
-/* Met position fixed zorg ik ervoor dat de header verticaal komt te staan*/
+/*Met position: fixed zorg ik ervoor dat de header blijft staan tijdens het scrollen, 
+en met padding dat de inhoud van de button-container niet tegen de zijkant van de website plakt.*/
 .sidebar {
     position: fixed;
     background: #826851;
@@ -36,6 +34,9 @@ header {
     width: 5%;
 }
 
+/* een button-container in de sidebar, hier maak ik gerbuik van display flex, 
+flex-direction en align-items center om de buttons in de button-container netjes onder elkaar te krijgen. 
+met de gap zorg ik voor space tussen de buttons. */
 .button-container {
     height: 300px;
     display: flex;
@@ -44,6 +45,8 @@ header {
     align-items: center;
 }
 
+/* hier style ik de buttons die in de button-container zitten, ook pas ik hier display flex toe, 
+zodat de iconen in de buttons netjes worden gecentreerd */
 .button {
     background-color: #F7F4EA;
     height: 35px;
@@ -57,7 +60,7 @@ header {
 
 }
 
-
+/* in de main pas ik margin-left toe, zodat de content niet onder de header komt te staan */
 main {
     min-height: 100vh;
     margin-left: 70px;
@@ -65,21 +68,26 @@ main {
 
 }
 
+/* Door grid en place-items: center toe te passen in de section, 
+komt de inhoud van de titel-section netjes in het midden te staan.*/
 .titel-section {
     height: 350px;
     display: grid;
     place-items: center;
 }
 
+/* styling van de titel-div */
 .titel-div {
     height: 80%;
     width: 90%;
 }
 
+/* styling h1 in de titel-div */
 .titel-div h1 {
     font-size: 6rem;
 }
 
+/* hier centreer ik de tekst netjes met behulp van grid en align-items */
 .text-div {
     height: 30%;
     width: 90%;
@@ -88,11 +96,13 @@ main {
 
 }
 
+/* styling van p in de text-div */
 .text-div p {
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(189, 189, 189);
 }
 
+/* een article-section waar 2 divs in zitten: article-left en article-right. door de grid-template-columns wordt er per rij maar 1 article getoond  */
 .article-section {
     height: 100%;
     padding: 30px;
@@ -102,10 +112,13 @@ main {
 
 }
 
+/* height van de article */
 article {
     height: 200px;
 }
 
+/* dit is een de styling van de div voor de articles die links komen te staan, 
+ook heb ik met gap ervoor gezorgd dat er ruimte komt te staan tussen de articles */
 .article-left {
     display: grid;
     grid-template-columns: 1fr auto;
@@ -116,6 +129,8 @@ article {
     gap: 2rem;
 }
 
+/* dit is de styling van de div voor de articles die rechts komen te staan, met margin-left is dit gelukt. 
+grid-template-colums zorgt ervoor dat de inhoud: article-info en img, netjes naast elkaar komen te staan. */
 .article-right {
     display: grid;
     grid-template-columns: 1fr auto;
@@ -128,19 +143,24 @@ article {
 
 }
 
+/* met display grid en grid-template-rows krijg ik de article-texts en article-buttons netjes onderelkaar */
 .article-info {
     display: grid;
     grid-template-rows: 1fr auto;
 }
 
+/* in de article-text zit naam en leeftijd, door margin toe te voegen positioneer ik ze netjes in de article-info div */
 .article-text {
     margin: 1rem;
 }
 
+/* stylen van h2 van de articles */
 article h2 {
     font-size: 2rem;
 }
 
+/* in de article-buttons zitten dus de 2 buttons: eye en fav-button. 
+door display flex en justify-content: space-between toe te passen krijg ik ze zoals gewenst mooi naast elkaar  */
 .article-buttons {
     height: 60px;
     display: flex;
@@ -148,6 +168,7 @@ article h2 {
     margin-left: 10px;
 }
 
+/* hier style ik de favo-button */
 .button-favo {
     height: 85%;
     width: 12%;
@@ -155,11 +176,13 @@ article h2 {
     border-radius: 10px;
 }
 
+/* formaat button-icon */
 .button-favo img {
     height: 1.7rem;
     width: 1.7rem;
 }
 
+/* hier style ik de eye-button */
 .button-eye {
     height: 85%;
     width: 12%;
@@ -167,11 +190,13 @@ article h2 {
     border-radius: 10px;
 }
 
+/* formaat button-icon */
 .button-eye img {
     height: 1.7rem;
     width: 1.7rem;
 }
 
+/* formaat van de images in de article */
 article img {
     height: 200px;
     width: 300px;
@@ -179,12 +204,14 @@ article img {
 
 }
 
+/* een pictures-section om inhoud strak bij elkaar te houden */
 .pictures-section{
     height: 450px;
     width: 100%;
     
 }
 
+/* hier style ik de div waar de titel in komt te staan, inhoud staat mooi gecentreerd */
 .titel-pictures-div{
     height: 70px;
     width: 100%;
@@ -193,6 +220,9 @@ article img {
     background-color:#826851;
 }
 
+/* in de pictures-outer-div heb ik de pictures-div staan, in pictures-div heb ik de width staan op 80%. 
+dit zorgt ervoor dat afbeeldingen niet aan de rand van de website komt te staan maar wat meer in het midden. 
+Hierdoor krijg je 20% te zien zonder een background-color dus heb ik een outer div toegevoegd die wel 100% width heeft en de background-color toegepast  */
 .pictures-outer-div{
     height: 200px;
     width: 100%;
@@ -201,6 +231,7 @@ article img {
     place-items: center;
 }
 
+/* dit is de div waar de scroll-container in zit, dankzij deze div kan ik de scroll-container goed positioneren */
 .pictures-div{
     height: 200px;
     width: 80%;
@@ -210,11 +241,13 @@ article img {
     background-color:#826851;
 }
 
+/* Hier bepaal ik het formaat van de afbeeldingen in de picture-div. */
 .pictures-div img{
     height: 190px;
     width: 210px;
 }
 
+/* zorgt ervoor dat de text onder de afbeeldingen netjes gecentreerd wordt */
 .text-pictures-div{
     height: 100px;
     width: 100%;
@@ -223,6 +256,7 @@ article img {
     background-color: #826851;
 }
 
+/* margin-left zorgt hier ervoor dat content in de footer niet onder header komt te staan ook gebruik ik place-items:center om de socials div in de footer te centreren*/
 footer{
     margin-left: 75px;
     background-color: #826851;
@@ -230,6 +264,7 @@ footer{
     
 }
 
+/* stylen van socials div, met grid heb ik ervoor gezorgd dat alle 3 de namen netjes naast elkaar komen te staan */
 .socials{
     height: 100px;
     width: 50%;
@@ -239,10 +274,12 @@ footer{
     
 }
 
+/* grootte p van socials */
 .socials p{
     font-size: 2rem;
 }
 
+/* maakt de scroll-container scrolbaar */
 div.scroll-container {
   background-color: #333;
   overflow: auto;
@@ -253,20 +290,8 @@ div.scroll-container {
 
 }
 
+/* met padding zorg ik ervoor dat er ruimte komt tussen de afbeeldingen*/
 div.scroll-container img {
   padding: 10px;
 }
 
-
-
-
-/* article {
-height: 400px;
-aspect-ratio: 1/1;
-background: wheat;
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-gap: 10px;
-} */

@@ -15,7 +15,7 @@
   <header class="sidebar">
     <!-- ik heb een button-container div teogevoegd om css toe te passen zodat de buttons netjes onderelkaar komen te staan -->
     <div class="button-container">
-      <!-- per button heb ik de iconen toegevoegd via assets -->
+      <!-- per button heb ik de iconen toegevoegd in de header via assets -->
       <div class="button">
         <a href="index.html">
           <img src="assets/icon-home.svg" alt="Home" width="24" height="24">
@@ -44,9 +44,11 @@
   <main class="content">
     <!-- een section voor de titel -->
     <section class="titel-section">
+      <!-- Een div toegevoegd om de titel naar wens te positioneren. -->
       <div class="titel-div">
         <h1>WELKOM, BIJ DE SQUAD PAGE VAN 1J</h1>
       </div>
+      <!-- Een div toegevoegd om de text naar wens te positioneren. -->
       <div class="text-div">
         <p>Gemaakt door Jamie, Mete en Ahlam (Kwik, Kwek en Kwak)</p>
       </div>
@@ -57,11 +59,13 @@
 
       <!-- een article class voor de artikelen die links komen te staan -->
       <article class="article-left">
+        <!-- een div waar "article-text" en "article-buttons" in zitten voor de styling  -->
         <div class="article-info">
           <div class="article-text">
             <h2>Ahlam</h2>
             <p>20 jaar</p>
           </div>
+          <!-- een div waar de favo en eye button in zitten om deze netjes naast elkaar te stylen-->
           <div class="article-buttons">
             <button class="button-favo">
               <a href="#">
@@ -69,15 +73,18 @@
               </a>
             </button>
             <button class="button-eye">
+              <!-- een href met de link naar de profile-card -->
+              <!-- target="_blank" toegevoegd zodat de links in een nieuw tablad openen -->
               <a href="https://addaahva.github.io/your-tribe-profile-card/" target="_blank">
                 <img src="assets/icon-eye.svg" alt="Home" width="24" height="24">
               </a>
             </button>
           </div>
         </div>
+        <!-- hier voeg ik de mugshots van de leerlingen toe-->
         <img src="assets/squad1j-ahlam.jpg">
       </article>
-
+      <!-- een article class voor de artikelen die rechts komen te staan -->
       <article class="article-right">
         <div class="article-info">
           <div class="article-text">
@@ -652,21 +659,16 @@
 
 
     </section>
-
-
-
-    <!-- <article>
-        <a href="Jamie/Jamie.html">Jamie</a>
-        <a href="Mete/Mete.html">Mete</a>
-        <a href="Ahlam/Ahlam.html">Ahlam</a>
-      </article> -->
-
+<!-- pictures-section waarin ik 2 divs heb: titel-pictures-div en pictures-outer-div zodat ik ze naar wens kan stylen -->
       <section class="pictures-section">
+        <!-- een div voor de titel -->
         <div class="titel-pictures-div">
           <h3>Amstelcampus</h3>
         </div>
+        <!-- een outer div om het een background color te geven -->
         <div class="pictures-outer-div">
           <div class="pictures-div">
+            <!-- een div "scroll-container" met daarin de afbeeldingen -->
             <div class="scroll-container">
               <img src="assets/amstelcampus-1.jpg" alt="Home" width="24" height="24">
               <img src="assets/amstelcampus-2.jpg" alt="Home" width="24" height="24">
