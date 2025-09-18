@@ -1,0 +1,30 @@
+@media (max-width: 600px) {
+    .sidebar {
+        position: fixed;
+        width: 100%;
+        height: 70px;
+
+    }
+
+.button-container{
+    display: flex;
+    height: 35px;
+    width: 10%;
+    margin: px;
+    justify-items: center;
+    flex-direction: row;
+}
+
+.button{
+align-items: center;
+border-radius: 100%;
+padding: 20px;
+
+}
+
+.content{
+display: grid;
+grid-template-columns: 1fr ;
+}
+
+}
