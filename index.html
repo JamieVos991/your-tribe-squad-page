@@ -1,700 +1,1068 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="stylesheet" href="styles/style.css" />
-  <link rel="stylesheet" href="styles/small.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
-</head>
-
-<body>
-
-  <header class="sidebar">
-    <!-- ik heb een button-container div teogevoegd om css toe te passen zodat de buttons netjes onderelkaar komen te staan -->
-    <div class="button-container">
-      <!-- per button heb ik de iconen toegevoegd in de header via assets -->
-      <div class="button">
-        <a href="index.html">
-          <img src="assets/icon-home.svg" alt="Home" width="24" height="24">
-        </a>
-      </div>
-      <div class="button">
-        <a href="index.html">
-          <img src="assets/icon-heart.svg" alt="Home" width="24" height="24">
-        </a>
-      </div>
-      <div class="button">
-        <a href="index.html">
-          <img src="assets/icon-moon.svg" alt="Home" width="24" height="24">
-        </a>
-      </div>
-      <div class="button">
-        <a href="index.html">
-          <img src="assets/icon-search.svg" alt="Home" width="24" height="24">
-        </a>
-      </div>
-
-    </div>
-
-  </header>
-
-  <main class="content">
-    <!-- een section voor de titel -->
-    <section class="titel-section">
-      <!-- Een div toegevoegd om de titel naar wens te positioneren. -->
-      <div class="titel-div">
-        <h1>WELKOM, BIJ DE SQUAD PAGE VAN 1J</h1>
-      </div>
-      <!-- Een div toegevoegd om de text naar wens te positioneren. -->
-      <div class="text-div">
-        <p>Gemaakt door Jamie, Mete en Ahlam (Kwik, Kwek en Kwak)</p>
-      </div>
-    </section>
-
-    <!-- een section voor de artikelen -->
-    <section class="article-section">
-
-      <!-- een article class voor de artikelen die links komen te staan -->
-      <article class="article-left">
-        <!-- een div waar "article-text" en "article-buttons" in zitten voor de styling  -->
-        <div class="article-info">
-          <div class="article-text">
-            <h2>Ahlam</h2>
-            <p>20 jaar</p>
-          </div>
-          <!-- een div waar de favo en eye button in zitten om deze netjes naast elkaar te stylen-->
-          <div class="article-buttons">
-            <button class="button-favo">
-              <a href="#">
-                <img src="assets/icon-heart.svg" alt="Home" width="24" height="24">
-              </a>
-            </button>
-            <button class="button-eye">
-              <!-- een href met de link naar de profile-card -->
-              <!-- target="_blank" toegevoegd zodat de links in een nieuw tablad openen -->
-              <a href="https://addaahva.github.io/your-tribe-profile-card/" target="_blank">
-                <img src="assets/icon-eye.svg" alt="Home" width="24" height="24">
-              </a>
-            </button>
-          </div>
+  <body>
+    <header class="sidebar">
+      <!-- ik heb een button-container div teogevoegd om css toe te passen zodat de buttons netjes onderelkaar komen te staan -->
+      <div class="button-container">
+        <!-- per button heb ik de iconen toegevoegd in de header via assets -->
+        <div class="button">
+          <a href="index.html">
+            <img src="assets/icon-home.svg" alt="Home" width="24" height="24" />
+          </a>
         </div>
-        <!-- hier voeg ik de mugshots van de leerlingen toe-->
-        <img src="assets/squad1j-ahlam.jpg">
-      </article>
-      <!-- een article class voor de artikelen die rechts komen te staan -->
-      <article class="article-right">
-        <div class="article-info">
-          <div class="article-text">
-            <h2>Mete</h2>
-            <p>20 jaar</p>
-          </div>
-          <div class="article-buttons">
-            <button class="button-favo">
-              <a href="#">
-                <img src="assets/icon-heart.svg" alt="Home" width="24" height="24">
-              </a>
-            </button>
-            <button class="button-eye">
-              <a href="https://mete2004.github.io/your-tribe-profile-card/" target="_blank">
-                <img src="assets/icon-eye.svg" alt="Home" width="24" height="24">
-              </a>
-            </button>
-          </div>
+        <div class="button">
+          <button id="favoriet-nav-knop">
+            <img
+              src="assets/icon-heart.svg"
+              alt="Home"
+              width="24"
+              height="24"
+            />
+          </button>
         </div>
-        <img src="assets/squad1j-mete.jpg">
-      </article>
-
-      <article class="article-left">
-        <div class="article-info">
-          <div class="article-text">
-            <h2>Jamie</h2>
-            <p>20 jaar</p>
-          </div>
-          <div class="article-buttons">
-            <button class="button-favo">
-              <a href="#">
-                <img src="assets/icon-heart.svg" alt="Home" width="24" height="24">
-              </a>
-            </button>
-            <button class="button-eye">
-              <a href="https://jamievos991.github.io/HVA-Visitekaartje/" target="_blank">
-                <img src="assets/icon-eye.svg" alt="Home" width="24" height="24">
-              </a>
-            </button>
-          </div>
-        </div>
-        <img src="assets/squad1j-jamie.jpg">
-      </article>
-
-      <article class="article-right">
-        <div class="article-info">
-          <div class="article-text">
-            <h2>Anass</h2>
-            <p>20 jaar</p>
-          </div>
-          <div class="article-buttons">
-            <button class="button-favo">
-              <a href="#">
-                <img src="assets/icon-heart.svg" alt="Home" width="24" height="24">
-              </a>
-            </button>
-            <button class="button-eye">
-              <a href="#">
-                <img src="assets/icon-eye.svg" alt="Home" width="24" height="24">
-              </a>
-            </button>
-          </div>
-        </div>
-        <img src="assets/squad1j-anass.jpg">
-      </article>
-
-      <article class="article-left">
-        <div class="article-info">
-          <div class="article-text">
-            <h2>Ayoub</h2>
-            <p>20 jaar</p>
-          </div>
-          <div class="article-buttons">
-            <button class="button-favo">
-              <a href="#">
-                <img src="assets/icon-heart.svg" alt="Home" width="24" height="24">
-              </a>
-            </button>
-            <button class="button-eye">
-              <a href="#">
-                <img src="assets/icon-eye.svg" alt="Home" width="24" height="24">
-              </a>
-            </button>
-          </div>
-        </div>
-        <img src="assets/squad1j-ayoub.jpg">
-      </article>
-
-      <article class="article-right">
-        <div class="article-info">
-          <div class="article-text">
-            <h2>Bronx</h2>
-            <p>20 jaar</p>
-          </div>
-          <div class="article-buttons">
-            <button class="button-favo">
-              <a href="#">
-                <img src="assets/icon-heart.svg" alt="Home" width="24" height="24">
-              </a>
-            </button>
-            <button class="button-eye">
-              <a href="https://bronxpostma13.github.io/your-tribe-profile-card/" target="_blank">
-                <img src="assets/icon-eye.svg" alt="Home" width="24" height="24">
-              </a>
-            </button>
-          </div>
-        </div>
-        <img src="assets/squad1j-bronx.jpg">
-      </article>
-
-      <article class="article-left">
-        <div class="article-info">
-          <div class="article-text">
-            <h2>Chema</h2>
-            <p>20 jaar</p>
-          </div>
-          <div class="article-buttons">
-            <button class="button-favo">
-              <a href="#">
-                <img src="assets/icon-heart.svg" alt="Home" width="24" height="24">
-              </a>
-            </button>
-            <button class="button-eye">
-              <a href="https://chewsy.github.io/visitekaartje/" target="_blank">
-                <img src="assets/icon-eye.svg" alt="Home" width="24" height="24">
-              </a>
-            </button>
-          </div>
-        </div>
-        <img src="assets/squad1j-chama.jpg">
-      </article>
-
-      <article class="article-right">
-        <div class="article-info">
-          <div class="article-text">
-            <h2>Heba</h2>
-            <p>20 jaar</p>
-          </div>
-          <div class="article-buttons">
-            <button class="button-favo">
-              <a href="#">
-                <img src="assets/icon-heart.svg" alt="Home" width="24" height="24">
-              </a>
-            </button>
-            <button class="button-eye">
-              <a href="https://handouh1.github.io/your-tribe-profile-card/" target="_blank">
-                <img src="assets/icon-eye.svg" alt="Home" width="24" height="24">
-              </a>
-            </button>
-          </div>
-        </div>
-        <img src="assets/squad1j-heba.jpg">
-      </article>
-
-      <article class="article-left">
-        <div class="article-info">
-          <div class="article-text">
-            <h2>Iman</h2>
-            <p>20 jaar</p>
-          </div>
-          <div class="article-buttons">
-            <button class="button-favo">
-              <a href="#">
-                <img src="assets/icon-heart.svg" alt="Home" width="24" height="24">
-              </a>
-            </button>
-            <button class="button-eye">
-              <a href="#">
-                <img src="assets/icon-eye.svg" alt="Home" width="24" height="24">
-              </a>
-            </button>
-          </div>
-        </div>
-        <img src="assets/squad1j-iman.jpg">
-      </article>
-
-      <article class="article-right">
-        <div class="article-info">
-          <div class="article-text">
-            <h2>Jadon</h2>
-            <p>20 jaar</p>
-          </div>
-          <div class="article-buttons">
-            <button class="button-favo">
-              <a href="#">
-                <img src="assets/icon-heart.svg" alt="Home" width="24" height="24">
-              </a>
-            </button>
-            <button class="button-eye">
-              <a href="https://jadonfdnd.github.io/your-tribe-profile-card/" target="_blank">
-                <img src="assets/icon-eye.svg" alt="Home" width="24" height="24">
-              </a>
-            </button>
-          </div>
-        </div>
-        <img src="assets/squad1j-jadon.jpg">
-      </article>
-
-      <article class="article-left">
-        <div class="article-info">
-          <div class="article-text">
-            <h2>Jamie</h2>
-            <p>20 jaar</p>
-          </div>
-          <div class="article-buttons">
-            <button class="button-favo">
-              <a href="#">
-                <img src="assets/icon-heart.svg" alt="Home" width="24" height="24">
-              </a>
-            </button>
-            <button class="button-eye">
-              <a href="https://jamievos991.github.io/HVA-Visitekaartje/" target="_blank">
-                <img src="assets/icon-eye.svg" alt="Home" width="24" height="24">
-              </a>
-            </button>
-          </div>
-        </div>
-        <img src="assets/squad1j-jamie.jpg">
-      </article>
-
-      <article class="article-right">
-        <div class="article-info">
-          <div class="article-text">
-            <h2>Jamil</h2>
-            <p>20 jaar</p>
-          </div>
-          <div class="article-buttons">
-            <button class="button-favo">
-              <a href="#">
-                <img src="assets/icon-heart.svg" alt="Home" width="24" height="24">
-              </a>
-            </button>
-            <button class="button-eye">
-              <a href="#">
-                <img src="assets/icon-eye.svg" alt="Home" width="24" height="24">
-              </a>
-            </button>
-          </div>
-        </div>
-        <img src="assets/squad1j-jamil.jpg">
-      </article>
-
-      <article class="article-left">
-        <div class="article-info">
-          <div class="article-text">
-            <h2>Jasin</h2>
-            <p>20 jaar</p>
-          </div>
-          <div class="article-buttons">
-            <button class="button-favo">
-              <a href="#">
-                <img src="assets/icon-heart.svg" alt="Home" width="24" height="24">
-              </a>
-            </button>
-            <button class="button-eye">
-              <a href="https://jasinahmed.github.io/your-tribe-profile-card/" target="_blank">
-                <img src="assets/icon-eye.svg" alt="Home" width="24" height="24">
-              </a>
-            </button>
-          </div>
-        </div>
-        <img src="assets/squad1j-jasin.jpg">
-      </article>
-
-      <article class="article-right">
-        <div class="article-info">
-          <div class="article-text">
-            <h2>Julian</h2>
-            <p>20 jaar</p>
-          </div>
-          <div class="article-buttons">
-            <button class="button-favo">
-              <a href="#">
-                <img src="assets/icon-heart.svg" alt="Home" width="24" height="24">
-              </a>
-            </button>
-            <button class="button-eye">
-              <a href="https://juliandavelaar.github.io/your-tribe-profile-card/" target="_blank">
-                <img src="assets/icon-eye.svg" alt="Home" width="24" height="24">
-              </a>
-            </button>
-          </div>
-        </div>
-        <img src="assets/squad1j-julian.jpg">
-      </article>
-
-      <article class="article-left">
-        <div class="article-info">
-          <div class="article-text">
-            <h2>Kevin</h2>
-            <p>20 jaar</p>
-          </div>
-          <div class="article-buttons">
-            <button class="button-favo">
-              <a href="#">
-                <img src="assets/icon-heart.svg" alt="Home" width="24" height="24">
-              </a>
-            </button>
-            <button class="button-eye">
-              <a href="https://toasterbath0758.github.io/your-tribe-profile-card/" target="_blank">
-                <img src="assets/icon-eye.svg" alt="Home" width="24" height="24">
-              </a>
-            </button>
-          </div>
-        </div>
-        <img src="assets/squad1j-kevin.jpg">
-      </article>
-
-      <article class="article-right">
-        <div class="article-info">
-          <div class="article-text">
-            <h2>Kurollos</h2>
-            <p>20 jaar</p>
-          </div>
-          <div class="article-buttons">
-            <button class="button-favo">
-              <a href="#">
-                <img src="assets/icon-heart.svg" alt="Home" width="24" height="24">
-              </a>
-            </button>
-            <button class="button-eye">
-              <a href="https://kurollos.github.io/your-tribe-profile-card/" target="_blank">
-                <img src="assets/icon-eye.svg" alt="Home" width="24" height="24">
-              </a>
-            </button>
-          </div>
-        </div>
-        <img src="assets/squad1j-kurollos.jpg">
-      </article>
-
-      <article class="article-left">
-        <div class="article-info">
-          <div class="article-text">
-            <h2>Ké</h2>
-            <p>20 jaar</p>
-          </div>
-          <div class="article-buttons">
-            <button class="button-favo">
-              <a href="#">
-                <img src="assets/icon-heart.svg" alt="Home" width="24" height="24">
-              </a>
-            </button>
-            <button class="button-eye">
-              <a href="https://kebiemen.github.io/your-tribe-profile-card/" target="_blank">
-                <img src="assets/icon-eye.svg" alt="Home" width="24" height="24">
-              </a>
-            </button>
-          </div>
-        </div>
-        <img src="assets/squad1j-ké.jpg">
-      </article>
-
-      <article class="article-right">
-        <div class="article-info">
-          <div class="article-text">
-            <h2>Luc</h2>
-            <p>20 jaar</p>
-          </div>
-          <div class="article-buttons">
-            <button class="button-favo">
-              <a href="#">
-                <img src="assets/icon-heart.svg" alt="Home" width="24" height="24">
-              </a>
-            </button>
-            <button class="button-eye">
-              <a href="https://peter69420gang.github.io/your-tribe-profile-card/" target="_blank">
-                <img src="assets/icon-eye.svg" alt="Home" width="24" height="24">
-              </a>
-            </button>
-          </div>
-        </div>
-        <img src="assets/squad1j-luc.jpg">
-      </article>
-
-      <article class="article-left">
-        <div class="article-info">
-          <div class="article-text">
-            <h2>Luka</h2>
-            <p>20 jaar</p>
-          </div>
-          <div class="article-buttons">
-            <button class="button-favo">
-              <a href="#">
-                <img src="assets/icon-heart.svg" alt="Home" width="24" height="24">
-              </a>
-            </button>
-            <button class="button-eye">
-              <a href="https://millie8969.github.io/lmd-profile-card/" target="_blank">
-                <img src="assets/icon-eye.svg" alt="Home" width="24" height="24">
-              </a>
-            </button>
-          </div>
-        </div>
-        <img src="assets/squad1j-luka.jpg">
-      </article>
-
-      <article class="article-right">
-        <div class="article-info">
-          <div class="article-text">
-            <h2>Lynn</h2>
-            <p>20 jaar</p>
-          </div>
-          <div class="article-buttons">
-            <button class="button-favo">
-              <a href="#">
-                <img src="assets/icon-heart.svg" alt="Home" width="24" height="24">
-              </a>
-            </button>
-            <button class="button-eye">
-              <a href="https://lynnvdbo.github.io/your-tribe-profile-card/" target="_blank">
-                <img src="assets/icon-eye.svg" alt="Home" width="24" height="24">
-              </a>
-            </button>
-          </div>
-        </div>
-        <img src="assets/squad1j-lynn.jpg">
-      </article>
-
-      <article class="article-left">
-        <div class="article-info">
-          <div class="article-text">
-            <h2>Maarten</h2>
-            <p>20 jaar</p>
-          </div>
-          <div class="article-buttons">
-            <button class="button-favo">
-              <a href="#">
-                <img src="assets/icon-heart.svg" alt="Home" width="24" height="24">
-              </a>
-            </button>
-            <button class="button-eye">
-              <a href="https://maartentepoele.github.io/your-tribe-profile-card/" target="_blank">
-                <img src="assets/icon-eye.svg" alt="Home" width="24" height="24">
-              </a>
-            </button>
-          </div>
-        </div>
-        <img src="assets/squad1j-maarten.jpg">
-      </article>
-
-      <article class="article-right">
-        <div class="article-info">
-          <div class="article-text">
-            <h2>Mathijs</h2>
-            <p>20 jaar</p>
-          </div>
-          <div class="article-buttons">
-            <button class="button-favo">
-              <a href="#">
-                <img src="assets/icon-heart.svg" alt="Home" width="24" height="24">
-              </a>
-            </button>
-            <button class="button-eye">
-              <a href="https://mathijsn.github.io/your-tribe-profile-card/" target="_blank">
-                <img src="assets/icon-eye.svg" alt="Home" width="24" height="24">
-              </a>
-            </button>
-          </div>
-        </div>
-        <img src="assets/squad1j-mathijs.jpg">
-      </article>
-
-      <article class="article-left">
-        <div class="article-info">
-          <div class="article-text">
-            <h2>Meraichio</h2>
-            <p>20 jaar</p>
-          </div>
-          <div class="article-buttons">
-            <button class="button-favo">
-              <a href="#">
-                <img src="assets/icon-heart.svg" alt="Home" width="24" height="24">
-              </a>
-            </button>
-            <button class="button-eye">
-              <a href="#">
-                <img src="assets/icon-eye.svg" alt="Home" width="24" height="24">
-              </a>
-            </button>
-          </div>
-        </div>
-        <img src="assets/squad1j-meraichio.jpg">
-      </article>
-
-      <article class="article-right">
-        <div class="article-info">
-          <div class="article-text">
-            <h2>Sadaf</h2>
-            <p>20 jaar</p>
-          </div>
-          <div class="article-buttons">
-            <button class="button-favo">
-              <a href="#">
-                <img src="assets/icon-heart.svg" alt="Home" width="24" height="24">
-              </a>
-            </button>
-            <button class="button-eye">
-              <a href="https://sadaf-design.github.io/your-tribe-profile-card/" target="_blank">
-                <img src="assets/icon-eye.svg" alt="Home" width="24" height="24">
-              </a>
-            </button>
-          </div>
-        </div>
-        <img src="assets/squad1j-sadaf.jpg">
-      </article>
-
-      <article class="article-left">
-        <div class="article-info">
-          <div class="article-text">
-            <h2>Sieuwke</h2>
-            <p>20 jaar</p>
-          </div>
-          <div class="article-buttons">
-            <button class="button-favo">
-              <a href="#">
-                <img src="assets/icon-heart.svg" alt="Home" width="24" height="24">
-              </a>
-            </button>
-            <button class="button-eye">
-              <a href="https://sieuwkesheta.github.io/your-tribe-profile-card/" target="_blank">
-                <img src="assets/icon-eye.svg" alt="Home" width="24" height="24">
-              </a>
-            </button>
-          </div>
-        </div>
-        <img src="assets/squad1j-sieuwke.jpg">
-      </article>
-
-      <article class="article-right">
-        <div class="article-info">
-          <div class="article-text">
-            <h2>Tom</h2>
-            <p>20 jaar</p>
-          </div>
-          <div class="article-buttons">
-            <button class="button-favo">
-              <a href="#">
-                <img src="assets/icon-heart.svg" alt="Home" width="24" height="24">
-              </a>
-            </button>
-            <button class="button-eye">
-              <a href="#">
-                <img src="assets/icon-eye.svg" alt="Home" width="24" height="24">
-              </a>
-            </button>
-          </div>
-        </div>
-        <img src="assets/squad1j-tom.jpg">
-      </article>
-
-      <article class="article-left">
-        <div class="article-info">
-          <div class="article-text">
-            <h2>Yassine</h2>
-            <p>20 jaar</p>
-          </div>
-          <div class="article-buttons">
-            <button class="button-favo">
-              <a href="#">
-                <img src="assets/icon-heart.svg" alt="Home" width="24" height="24">
-              </a>
-            </button>
-            <button class="button-eye">
-              <a href="https://yassineak1.github.io/your-tribe-profile-card/" target="_blank">
-                <img src="assets/icon-eye.svg" alt="Home" width="24" height="24">
-              </a>
-            </button>
-          </div>
-        </div>
-        <img src="assets/squad1j-yassine.jpg">
-      </article>
-
-
-    </section>
-    <!-- pictures-section waarin ik 2 divs heb: titel-pictures-div en pictures-outer-div zodat ik ze naar wens kan stylen -->
-    <section class="pictures-section">
-      <!-- een div voor de titel -->
-      <div class="titel-pictures-div">
-        <h3>Amstelcampus</h3>
-      </div>
-      <!-- een outer div om het een background color te geven -->
-      <div class="pictures-outer-div">
-        <div class="pictures-div">
-          <!-- een div "scroll-container" met daarin de afbeeldingen -->
-          <div class="scroll-container">
-            <img src="assets/amstelcampus-1.jpg" alt="Home" width="24" height="24">
-            <img src="assets/amstelcampus-2.jpg" alt="Home" width="24" height="24">
-            <img src="assets/amstelcampus-3.jpg" alt="Home" width="24" height="24">
-            <img src="assets/amstelcampus-4.jpg" alt="Home" width="24" height="24">
-            <img src="assets/amstelcampus-5.jpg" alt="Home" width="24" height="24">
-            <img src="assets/amstelcampus-6.jpg" alt="Home" width="24" height="24">
-            <img src="assets/amstelcampus-7.jpg" alt="Home" width="24" height="24">
-            <img src="assets/amstelcampus-8.jpg" alt="Home" width="24" height="24">
-          </div>
+        <div class="button">
+          <a href="index.html">
+            <img src="assets/icon-moon.svg" alt="Home" width="24" height="24" />
+          </a>
         </div>
       </div>
-      <div class="text-pictures-div">
+    </header>
+
+    <main class="content">
+      <!-- een section voor de titel -->
+      <section class="titel-section">
+        <!-- Een div toegevoegd om de titel naar wens te positioneren. -->
+        <div class="titel-div">
+          <h1>WELKOM, BIJ DE SQUAD PAGE VAN 1J</h1>
+        </div>
+        <!-- Een div toegevoegd om de text naar wens te positioneren. -->
+        <div class="text-div">
+          <p>Gemaakt door Jamie, Mete en Ahlam (Kwik, Kwek en Kwak)</p>
+        </div>
+
+        <input type="search" />
+      </section>
+
+      <!-- een section voor de artikelen -->
+      <section class="article-section">
+        <!-- een article class voor de artikelen die links komen te staan -->
+        <article class="article-left">
+          <!-- een div waar "article-text" en "article-buttons" in zitten voor de styling  -->
+          <div class="article-info">
+            <div class="article-text">
+              <h2>Ahlam</h2>
+              <p>20 jaar</p>
+            </div>
+            <!-- een div waar de favo en eye button in zitten om deze netjes naast elkaar te stylen-->
+            <div class="article-buttons">
+              <button class="button-favo favoriet-knop">
+                <a href="#">
+                  <img
+                    src="assets/icon-heart.svg"
+                    alt="Home"
+                    width="24"
+                    height="24"
+                  />
+                </a>
+              </button>
+              <button class="button-eye">
+                <!-- een href met de link naar de profile-card -->
+                <!-- target="_blank" toegevoegd zodat de links in een nieuw tablad openen -->
+                <a
+                  href="https://addaahva.github.io/your-tribe-profile-card/"
+                  target="_blank"
+                >
+                  <img
+                    src="assets/icon-eye.svg"
+                    alt="Home"
+                    width="24"
+                    height="24"
+                  />
+                </a>
+              </button>
+            </div>
+          </div>
+          <!-- hier voeg ik de mugshots van de leerlingen toe-->
+          <img src="assets/squad1j-ahlam.jpg" />
+        </article>
+        <!-- een article class voor de artikelen die rechts komen te staan -->
+        <article class="article-right">
+          <div class="article-info">
+            <div class="article-text">
+              <h2>Mete</h2>
+              <p>20 jaar</p>
+            </div>
+            <div class="article-buttons">
+              <button class="button-favo favoriet-knop">
+                <a href="#">
+                  <img
+                    src="assets/icon-heart.svg"
+                    alt="Home"
+                    width="24"
+                    height="24"
+                  />
+                </a>
+              </button>
+              <button class="button-eye">
+                <a
+                  href="https://mete2004.github.io/your-tribe-profile-card/"
+                  target="_blank"
+                >
+                  <img
+                    src="assets/icon-eye.svg"
+                    alt="Home"
+                    width="24"
+                    height="24"
+                  />
+                </a>
+              </button>
+            </div>
+          </div>
+          <img src="assets/squad1j-mete.jpg" />
+        </article>
+
+        <article class="article-left">
+          <div class="article-info">
+            <div class="article-text">
+              <h2>Jamie</h2>
+              <p>20 jaar</p>
+            </div>
+            <div class="article-buttons">
+              <button class="button-favo favoriet-knop">
+                <a href="#">
+                  <img
+                    src="assets/icon-heart.svg"
+                    alt="Home"
+                    width="24"
+                    height="24"
+                  />
+                </a>
+              </button>
+              <button class="button-eye">
+                <a
+                  href="https://jamievos991.github.io/HVA-Visitekaartje/"
+                  target="_blank"
+                >
+                  <img
+                    src="assets/icon-eye.svg"
+                    alt="Home"
+                    width="24"
+                    height="24"
+                  />
+                </a>
+              </button>
+            </div>
+          </div>
+          <img src="assets/squad1j-jamie.jpg" />
+        </article>
+
+        <article class="article-right">
+          <div class="article-info">
+            <div class="article-text">
+              <h2>Anass</h2>
+              <p>20 jaar</p>
+            </div>
+            <div class="article-buttons">
+              <button class="button-favo favoriet-knop">
+                <a href="#">
+                  <img
+                    src="assets/icon-heart.svg"
+                    alt="Home"
+                    width="24"
+                    height="24"
+                  />
+                </a>
+              </button>
+              <button class="button-eye">
+                <a href="#">
+                  <img
+                    src="assets/icon-eye.svg"
+                    alt="Home"
+                    width="24"
+                    height="24"
+                  />
+                </a>
+              </button>
+            </div>
+          </div>
+          <img src="assets/squad1j-anass.jpg" />
+        </article>
+
+        <article class="article-left">
+          <div class="article-info">
+            <div class="article-text">
+              <h2>Ayoub</h2>
+              <p>20 jaar</p>
+            </div>
+            <div class="article-buttons">
+              <button class="button-favo favoriet-knop">
+                <a href="#">
+                  <img
+                    src="assets/icon-heart.svg"
+                    alt="Home"
+                    width="24"
+                    height="24"
+                  />
+                </a>
+              </button>
+              <button class="button-eye">
+                <a href="#">
+                  <img
+                    src="assets/icon-eye.svg"
+                    alt="Home"
+                    width="24"
+                    height="24"
+                  />
+                </a>
+              </button>
+            </div>
+          </div>
+          <img src="assets/squad1j-ayoub.jpg" />
+        </article>
+
+        <article class="article-right">
+          <div class="article-info">
+            <div class="article-text">
+              <h2>Bronx</h2>
+              <p>20 jaar</p>
+            </div>
+            <div class="article-buttons">
+              <button class="button-favo favoriet-knop">
+                <a href="#">
+                  <img
+                    src="assets/icon-heart.svg"
+                    alt="Home"
+                    width="24"
+                    height="24"
+                  />
+                </a>
+              </button>
+              <button class="button-eye">
+                <a
+                  href="https://bronxpostma13.github.io/your-tribe-profile-card/"
+                  target="_blank"
+                >
+                  <img
+                    src="assets/icon-eye.svg"
+                    alt="Home"
+                    width="24"
+                    height="24"
+                  />
+                </a>
+              </button>
+            </div>
+          </div>
+          <img src="assets/squad1j-bronx.jpg" />
+        </article>
+
+        <article class="article-left">
+          <div class="article-info">
+            <div class="article-text">
+              <h2>Chema</h2>
+              <p>20 jaar</p>
+            </div>
+            <div class="article-buttons">
+              <button class="button-favo favoriet-knop">
+                <a href="#">
+                  <img
+                    src="assets/icon-heart.svg"
+                    alt="Home"
+                    width="24"
+                    height="24"
+                  />
+                </a>
+              </button>
+              <button class="button-eye">
+                <a
+                  href="https://chewsy.github.io/visitekaartje/"
+                  target="_blank"
+                >
+                  <img
+                    src="assets/icon-eye.svg"
+                    alt="Home"
+                    width="24"
+                    height="24"
+                  />
+                </a>
+              </button>
+            </div>
+          </div>
+          <img src="assets/squad1j-chama.jpg" />
+        </article>
+
+        <article class="article-right">
+          <div class="article-info">
+            <div class="article-text">
+              <h2>Heba</h2>
+              <p>20 jaar</p>
+            </div>
+            <div class="article-buttons">
+              <button class="button-favo favoriet-knop">
+                <a href="#">
+                  <img
+                    src="assets/icon-heart.svg"
+                    alt="Home"
+                    width="24"
+                    height="24"
+                  />
+                </a>
+              </button>
+              <button class="button-eye">
+                <a
+                  href="https://handouh1.github.io/your-tribe-profile-card/"
+                  target="_blank"
+                >
+                  <img
+                    src="assets/icon-eye.svg"
+                    alt="Home"
+                    width="24"
+                    height="24"
+                  />
+                </a>
+              </button>
+            </div>
+          </div>
+          <img src="assets/squad1j-heba.jpg" />
+        </article>
+
+        <article class="article-left">
+          <div class="article-info">
+            <div class="article-text">
+              <h2>Iman</h2>
+              <p>20 jaar</p>
+            </div>
+            <div class="article-buttons">
+              <button class="button-favo favoriet-knop">
+                <a href="#">
+                  <img
+                    src="assets/icon-heart.svg"
+                    alt="Home"
+                    width="24"
+                    height="24"
+                  />
+                </a>
+              </button>
+              <button class="button-eye">
+                <a href="#">
+                  <img
+                    src="assets/icon-eye.svg"
+                    alt="Home"
+                    width="24"
+                    height="24"
+                  />
+                </a>
+              </button>
+            </div>
+          </div>
+          <img src="assets/squad1j-iman.jpg" />
+        </article>
+
+        <article class="article-right">
+          <div class="article-info">
+            <div class="article-text">
+              <h2>Jadon</h2>
+              <p>20 jaar</p>
+            </div>
+            <div class="article-buttons">
+              <button class="button-favo favoriet-knop">
+                <a href="#">
+                  <img
+                    src="assets/icon-heart.svg"
+                    alt="Home"
+                    width="24"
+                    height="24"
+                  />
+                </a>
+              </button>
+              <button class="button-eye">
+                <a
+                  href="https://jadonfdnd.github.io/your-tribe-profile-card/"
+                  target="_blank"
+                >
+                  <img
+                    src="assets/icon-eye.svg"
+                    alt="Home"
+                    width="24"
+                    height="24"
+                  />
+                </a>
+              </button>
+            </div>
+          </div>
+          <img src="assets/squad1j-jadon.jpg" />
+        </article>
+
+        <article class="article-left">
+          <div class="article-info">
+            <div class="article-text">
+              <h2>Jamie</h2>
+              <p>20 jaar</p>
+            </div>
+            <div class="article-buttons">
+              <button class="button-favo favoriet-knop">
+                <a href="#">
+                  <img
+                    src="assets/icon-heart.svg"
+                    alt="Home"
+                    width="24"
+                    height="24"
+                  />
+                </a>
+              </button>
+              <button class="button-eye">
+                <a
+                  href="https://jamievos991.github.io/HVA-Visitekaartje/"
+                  target="_blank"
+                >
+                  <img
+                    src="assets/icon-eye.svg"
+                    alt="Home"
+                    width="24"
+                    height="24"
+                  />
+                </a>
+              </button>
+            </div>
+          </div>
+          <img src="assets/squad1j-jamie.jpg" />
+        </article>
+
+        <article class="article-right">
+          <div class="article-info">
+            <div class="article-text">
+              <h2>Jamil</h2>
+              <p>20 jaar</p>
+            </div>
+            <div class="article-buttons">
+              <button class="button-favo favoriet-knop">
+                <a href="#">
+                  <img
+                    src="assets/icon-heart.svg"
+                    alt="Home"
+                    width="24"
+                    height="24"
+                  />
+                </a>
+              </button>
+              <button class="button-eye">
+                <a href="#">
+                  <img
+                    src="assets/icon-eye.svg"
+                    alt="Home"
+                    width="24"
+                    height="24"
+                  />
+                </a>
+              </button>
+            </div>
+          </div>
+          <img src="assets/squad1j-jamil.jpg" />
+        </article>
+
+        <article class="article-left">
+          <div class="article-info">
+            <div class="article-text">
+              <h2>Jasin</h2>
+              <p>20 jaar</p>
+            </div>
+            <div class="article-buttons">
+              <button class="button-favo favoriet-knop">
+                <a href="#">
+                  <img
+                    src="assets/icon-heart.svg"
+                    alt="Home"
+                    width="24"
+                    height="24"
+                  />
+                </a>
+              </button>
+              <button class="button-eye">
+                <a
+                  href="https://jasinahmed.github.io/your-tribe-profile-card/"
+                  target="_blank"
+                >
+                  <img
+                    src="assets/icon-eye.svg"
+                    alt="Home"
+                    width="24"
+                    height="24"
+                  />
+                </a>
+              </button>
+            </div>
+          </div>
+          <img src="assets/squad1j-jasin.jpg" />
+        </article>
+
+        <article class="article-right">
+          <div class="article-info">
+            <div class="article-text">
+              <h2>Julian</h2>
+              <p>20 jaar</p>
+            </div>
+            <div class="article-buttons">
+              <button class="button-favo favoriet-knop">
+                <a href="#">
+                  <img
+                    src="assets/icon-heart.svg"
+                    alt="Home"
+                    width="24"
+                    height="24"
+                  />
+                </a>
+              </button>
+              <button class="button-eye">
+                <a
+                  href="https://juliandavelaar.github.io/your-tribe-profile-card/"
+                  target="_blank"
+                >
+                  <img
+                    src="assets/icon-eye.svg"
+                    alt="Home"
+                    width="24"
+                    height="24"
+                  />
+                </a>
+              </button>
+            </div>
+          </div>
+          <img src="assets/squad1j-julian.jpg" />
+        </article>
+
+        <article class="article-left">
+          <div class="article-info">
+            <div class="article-text">
+              <h2>Kevin</h2>
+              <p>20 jaar</p>
+            </div>
+            <div class="article-buttons">
+              <button class="button-favo favoriet-knop">
+                <a href="#">
+                  <img
+                    src="assets/icon-heart.svg"
+                    alt="Home"
+                    width="24"
+                    height="24"
+                  />
+                </a>
+              </button>
+              <button class="button-eye">
+                <a
+                  href="https://toasterbath0758.github.io/your-tribe-profile-card/"
+                  target="_blank"
+                >
+                  <img
+                    src="assets/icon-eye.svg"
+                    alt="Home"
+                    width="24"
+                    height="24"
+                  />
+                </a>
+              </button>
+            </div>
+          </div>
+          <img src="assets/squad1j-kevin.jpg" />
+        </article>
+
+        <article class="article-right">
+          <div class="article-info">
+            <div class="article-text">
+              <h2>Kurollos</h2>
+              <p>20 jaar</p>
+            </div>
+            <div class="article-buttons">
+              <button class="button-favo favoriet-knop">
+                <a href="#">
+                  <img
+                    src="assets/icon-heart.svg"
+                    alt="Home"
+                    width="24"
+                    height="24"
+                  />
+                </a>
+              </button>
+              <button class="button-eye">
+                <a
+                  href="https://kurollos.github.io/your-tribe-profile-card/"
+                  target="_blank"
+                >
+                  <img
+                    src="assets/icon-eye.svg"
+                    alt="Home"
+                    width="24"
+                    height="24"
+                  />
+                </a>
+              </button>
+            </div>
+          </div>
+          <img src="assets/squad1j-kurollos.jpg" />
+        </article>
+
+        <article class="article-left">
+          <div class="article-info">
+            <div class="article-text">
+              <h2>Ké</h2>
+              <p>20 jaar</p>
+            </div>
+            <div class="article-buttons">
+              <button class="button-favo favoriet-knop">
+                <a href="#">
+                  <img
+                    src="assets/icon-heart.svg"
+                    alt="Home"
+                    width="24"
+                    height="24"
+                  />
+                </a>
+              </button>
+              <button class="button-eye">
+                <a
+                  href="https://kebiemen.github.io/your-tribe-profile-card/"
+                  target="_blank"
+                >
+                  <img
+                    src="assets/icon-eye.svg"
+                    alt="Home"
+                    width="24"
+                    height="24"
+                  />
+                </a>
+              </button>
+            </div>
+          </div>
+          <img src="assets/squad1j-ké.jpg" />
+        </article>
+
+        <article class="article-right">
+          <div class="article-info">
+            <div class="article-text">
+              <h2>Luc</h2>
+              <p>20 jaar</p>
+            </div>
+            <div class="article-buttons">
+              <button class="button-favo favoriet-knop">
+                <a href="#">
+                  <img
+                    src="assets/icon-heart.svg"
+                    alt="Home"
+                    width="24"
+                    height="24"
+                  />
+                </a>
+              </button>
+              <button class="button-eye">
+                <a
+                  href="https://peter69420gang.github.io/your-tribe-profile-card/"
+                  target="_blank"
+                >
+                  <img
+                    src="assets/icon-eye.svg"
+                    alt="Home"
+                    width="24"
+                    height="24"
+                  />
+                </a>
+              </button>
+            </div>
+          </div>
+          <img src="assets/squad1j-luc.jpg" />
+        </article>
+
+        <article class="article-left">
+          <div class="article-info">
+            <div class="article-text">
+              <h2>Luka</h2>
+              <p>20 jaar</p>
+            </div>
+            <div class="article-buttons">
+              <button class="button-favo favoriet-knop">
+                <a href="#">
+                  <img
+                    src="assets/icon-heart.svg"
+                    alt="Home"
+                    width="24"
+                    height="24"
+                  />
+                </a>
+              </button>
+              <button class="button-eye">
+                <a
+                  href="https://millie8969.github.io/lmd-profile-card/"
+                  target="_blank"
+                >
+                  <img
+                    src="assets/icon-eye.svg"
+                    alt="Home"
+                    width="24"
+                    height="24"
+                  />
+                </a>
+              </button>
+            </div>
+          </div>
+          <img src="assets/squad1j-luka.jpg" />
+        </article>
+
+        <article class="article-right">
+          <div class="article-info">
+            <div class="article-text">
+              <h2>Lynn</h2>
+              <p>20 jaar</p>
+            </div>
+            <div class="article-buttons">
+              <button class="button-favo favoriet-knop">
+                <a href="#">
+                  <img
+                    src="assets/icon-heart.svg"
+                    alt="Home"
+                    width="24"
+                    height="24"
+                  />
+                </a>
+              </button>
+              <button class="button-eye">
+                <a
+                  href="https://lynnvdbo.github.io/your-tribe-profile-card/"
+                  target="_blank"
+                >
+                  <img
+                    src="assets/icon-eye.svg"
+                    alt="Home"
+                    width="24"
+                    height="24"
+                  />
+                </a>
+              </button>
+            </div>
+          </div>
+          <img src="assets/squad1j-lynn.jpg" />
+        </article>
+
+        <article class="article-left">
+          <div class="article-info">
+            <div class="article-text">
+              <h2>Maarten</h2>
+              <p>20 jaar</p>
+            </div>
+            <div class="article-buttons">
+              <button class="button-favo favoriet-knop">
+                <a href="#">
+                  <img
+                    src="assets/icon-heart.svg"
+                    alt="Home"
+                    width="24"
+                    height="24"
+                  />
+                </a>
+              </button>
+              <button class="button-eye">
+                <a
+                  href="https://maartentepoele.github.io/your-tribe-profile-card/"
+                  target="_blank"
+                >
+                  <img
+                    src="assets/icon-eye.svg"
+                    alt="Home"
+                    width="24"
+                    height="24"
+                  />
+                </a>
+              </button>
+            </div>
+          </div>
+          <img src="assets/squad1j-maarten.jpg" />
+        </article>
+
+        <article class="article-right">
+          <div class="article-info">
+            <div class="article-text">
+              <h2>Mathijs</h2>
+              <p>20 jaar</p>
+            </div>
+            <div class="article-buttons">
+              <button class="button-favo favoriet-knop">
+                <a href="#">
+                  <img
+                    src="assets/icon-heart.svg"
+                    alt="Home"
+                    width="24"
+                    height="24"
+                  />
+                </a>
+              </button>
+              <button class="button-eye">
+                <a
+                  href="https://mathijsn.github.io/your-tribe-profile-card/"
+                  target="_blank"
+                >
+                  <img
+                    src="assets/icon-eye.svg"
+                    alt="Home"
+                    width="24"
+                    height="24"
+                  />
+                </a>
+              </button>
+            </div>
+          </div>
+          <img src="assets/squad1j-mathijs.jpg" />
+        </article>
+
+        <article class="article-left">
+          <div class="article-info">
+            <div class="article-text">
+              <h2>Meraichio</h2>
+              <p>20 jaar</p>
+            </div>
+            <div class="article-buttons">
+              <button class="button-favo favoriet-knop">
+                <a href="#">
+                  <img
+                    src="assets/icon-heart.svg"
+                    alt="Home"
+                    width="24"
+                    height="24"
+                  />
+                </a>
+              </button>
+              <button class="button-eye">
+                <a href="#">
+                  <img
+                    src="assets/icon-eye.svg"
+                    alt="Home"
+                    width="24"
+                    height="24"
+                  />
+                </a>
+              </button>
+            </div>
+          </div>
+          <img src="assets/squad1j-meraichio.jpg" />
+        </article>
+
+        <article class="article-right">
+          <div class="article-info">
+            <div class="article-text">
+              <h2>Sadaf</h2>
+              <p>20 jaar</p>
+            </div>
+            <div class="article-buttons">
+              <button class="button-favo favoriet-knop">
+                <a href="#">
+                  <img
+                    src="assets/icon-heart.svg"
+                    alt="Home"
+                    width="24"
+                    height="24"
+                  />
+                </a>
+              </button>
+              <button class="button-eye">
+                <a
+                  href="https://sadaf-design.github.io/your-tribe-profile-card/"
+                  target="_blank"
+                >
+                  <img
+                    src="assets/icon-eye.svg"
+                    alt="Home"
+                    width="24"
+                    height="24"
+                  />
+                </a>
+              </button>
+            </div>
+          </div>
+          <img src="assets/squad1j-sadaf.jpg" />
+        </article>
+
+        <article class="article-left">
+          <div class="article-info">
+            <div class="article-text">
+              <h2>Sieuwke</h2>
+              <p>20 jaar</p>
+            </div>
+            <div class="article-buttons">
+              <button class="button-favo favoriet-knop">
+                <a href="#">
+                  <img
+                    src="assets/icon-heart.svg"
+                    alt="Home"
+                    width="24"
+                    height="24"
+                  />
+                </a>
+              </button>
+              <button class="button-eye">
+                <a
+                  href="https://sieuwkesheta.github.io/your-tribe-profile-card/"
+                  target="_blank"
+                >
+                  <img
+                    src="assets/icon-eye.svg"
+                    alt="Home"
+                    width="24"
+                    height="24"
+                  />
+                </a>
+              </button>
+            </div>
+          </div>
+          <img src="assets/squad1j-sieuwke.jpg" />
+        </article>
+
+        <article class="article-right">
+          <div class="article-info">
+            <div class="article-text">
+              <h2>Tom</h2>
+              <p>20 jaar</p>
+            </div>
+            <div class="article-buttons">
+              <button class="button-favo favoriet-knop">
+                <a href="#">
+                  <img
+                    src="assets/icon-heart.svg"
+                    alt="Home"
+                    width="24"
+                    height="24"
+                  />
+                </a>
+              </button>
+              <button class="button-eye">
+                <a href="#">
+                  <img
+                    src="assets/icon-eye.svg"
+                    alt="Home"
+                    width="24"
+                    height="24"
+                  />
+                </a>
+              </button>
+            </div>
+          </div>
+          <img src="assets/squad1j-tom.jpg" />
+        </article>
+
+        <article class="article-left">
+          <div class="article-info">
+            <div class="article-text">
+              <h2>Yassine</h2>
+              <p>20 jaar</p>
+            </div>
+            <div class="article-buttons">
+              <button class="button-favo favoriet-knop">
+                <a href="#">
+                  <img
+                    src="assets/icon-heart.svg"
+                    alt="Home"
+                    width="24"
+                    height="24"
+                  />
+                </a>
+              </button>
+              <button class="button-eye">
+                <a
+                  href="https://yassineak1.github.io/your-tribe-profile-card/"
+                  target="_blank"
+                >
+                  <img
+                    src="assets/icon-eye.svg"
+                    alt="Home"
+                    width="24"
+                    height="24"
+                  />
+                </a>
+              </button>
+            </div>
+          </div>
+          <img src="assets/squad1j-yassine.jpg" />
+        </article>
+      </section>
+      <!-- pictures-section waarin ik 2 divs heb: titel-pictures-div en pictures-outer-div zodat ik ze naar wens kan stylen -->
+      <section class="pictures-section">
+        <!-- een div voor de titel -->
+        <div class="titel-pictures-div">
+          <h3>Amstelcampus</h3>
+        </div>
+        <!-- een outer div om het een background color te geven -->
+        <div class="pictures-outer-div">
+          <div class="pictures-div">
+            <!-- een div "scroll-container" met daarin de afbeeldingen -->
+            <div class="scroll-container">
+              <img
+                src="assets/amstelcampus-1.jpg"
+                alt="Home"
+                width="24"
+                height="24"
+              />
+              <img
+                src="assets/amstelcampus-2.jpg"
+                alt="Home"
+                width="24"
+                height="24"
+              />
+              <img
+                src="assets/amstelcampus-3.jpg"
+                alt="Home"
+                width="24"
+                height="24"
+              />
+              <img
+                src="assets/amstelcampus-4.jpg"
+                alt="Home"
+                width="24"
+                height="24"
+              />
+              <img
+                src="assets/amstelcampus-5.jpg"
+                alt="Home"
+                width="24"
+                height="24"
+              />
+              <img
+                src="assets/amstelcampus-6.jpg"
+                alt="Home"
+                width="24"
+                height="24"
+              />
+              <img
+                src="assets/amstelcampus-7.jpg"
+                alt="Home"
+                width="24"
+                height="24"
+              />
+              <img
+                src="assets/amstelcampus-8.jpg"
+                alt="Home"
+                width="24"
+                height="24"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="text-pictures-div"></div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="socials">
+        <p>Ahlam</p>
+        <p>Mete</p>
+        <p>Jamie</p>
       </div>
-    </section>
-  </main>
-
-  <footer>
-
-    <div class="socials">
-      <p>Ahlam</p>
-      <p>Mete</p>
-      <p>Jamie</p>
-    </div>
-
-  </footer>
-</body>
-
+    </footer>
+    <script src="./scripts/script.js"></script>
+  </body>
 </html>

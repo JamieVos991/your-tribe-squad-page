@@ -1,14 +1,21 @@
 const search = document.querySelector('input[type="search"]');
 const articles = document.querySelectorAll('section article');
 
+// Maakt een event voor de input
 search.addEventListener('input', () => {
-  const zoeken = search.value.toLowerCase();
-  console.log(zoeken)
 
+  // Slaat de input in een variable op en maakt deze ik kleine letters
+  const zoeken = search.value.toLowerCase();
+
+  // Maakt een loop die door de articles gaat
   articles.forEach(article => {
+    // Maakt een variable aan die de text van de article pakt
     const tekst = article.textContent.toLowerCase();
+
+    // Als de text van de article matched met de input value laat die articles dan zien
     if (tekst.includes(zoeken)) {
       article.style.display = ''; 
+      // En anders zet de articles op display none
     } else {
       article.style.display = 'none'; 
     }
@@ -17,17 +24,17 @@ search.addEventListener('input', () => {
 
 
 document.addEventListener('DOMContentLoaded', () => {
-    const favoKnop = document.querySelectorAll('.favorite-btn');
-    const HartKnop = document.querySelector('#favorites-toggle');
-    const studenten = document.querySelector('section.students');
+    const favoKnop = document.querySelectorAll('.favoriet-knop');
+    const HartKnop = document.querySelector('#favoriet-nav-knop');
+    const studenten = document.querySelector('section.article-section');
 
     // Maak een array van alle artikelen in de sectie
     const articles = Array.from(studenten.querySelectorAll('article'));
   
-    // Maak een Set om de gefavoriete artikelen bij te houden (Set voorkomt dubbele items)
+    // Maak een Set om de favoriete artikelen bij te houden (Set voorkomt dubbele items)
     let favoritesLog = new Set(); 
   
-    // Loop door elke hart-knop in de artikelen
+    // Loop door elke hart knop in de artikelen
     favoKnop.forEach(btn => {
 
         // Vind het dichtstbijzijnde artikel dat bij deze knop hoort
@@ -46,11 +53,11 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Voeg een klik-event toe op het hartje in de aside om favorieten te tonen/verbergen
+    // Voeg een klik event toe op het hartje in de aside om favorieten te tonen/verbergen
     HartKnop.addEventListener('click', (e) => {
-        e.preventDefault(); // voorkom dat het <a>-element de pagina navigeert
+        e.preventDefault(); // Voorkomst refresh
 
-        // Controleer of de sectie al in "toon alleen favorieten"-modus staat
+        // Controleer of de sectie al in "toon alleen favorieten" modus staat
         if (studenten.dataset.showFavorites === 'true') {
             // Laat alle artikelen zien
             articles.forEach(article => article.style.display = '');
@@ -60,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
             articles.forEach(article => {
                 article.style.display = favoritesLog.has(article) ? '' : 'none';
             });
-            studenten.dataset.showFavorites = 'true'; // update de status
+            studenten.dataset.showFavorites = 'true'; 
         }
     });
 });
