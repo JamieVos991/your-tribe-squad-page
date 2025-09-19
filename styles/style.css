@@ -9,7 +9,7 @@
 
 /* Stel de achtergrondkleur van de website in en zorg dat body 100% hoogte heeft */
 body {
-    background-color: #F7F4EA;
+    background-color: #F9F1E8;
     margin: 0;
     height: 100%;
 }
@@ -20,6 +20,8 @@ h2,
 h3,
 p {
     font-family: Arial, Helvetica, sans-serif;
+    color: #4B3D31;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
 }
 
 
@@ -28,7 +30,7 @@ en met padding dat de inhoud van de button-container niet tegen de zijkant van d
 .sidebar {
     position: fixed;
     background: #826851;
-    color: white;
+    color: #F9F1E8;
     padding: 20px 0;
     height: 100vh;
     width: 5%;
@@ -48,7 +50,7 @@ met de gap zorg ik voor space tussen de buttons. */
 /* hier style ik de buttons die in de button-container zitten, ook pas ik hier display flex toe, 
 zodat de iconen in de buttons netjes worden gecentreerd */
 .button {
-    background-color: #F7F4EA;
+    background-color: #F9F1E8;
     height: 35px;
     width: 50%;
     margin: 5px;
@@ -57,7 +59,6 @@ zodat de iconen in de buttons netjes worden gecentreerd */
     align-items: center;
     justify-content: center;
     border-radius: 5px;
-
 }
 
 /* in de main pas ik margin-left toe, zodat de content niet onder de header komt te staan */
@@ -172,7 +173,7 @@ door display flex en justify-content: space-between toe te passen krijg ik ze zo
 .button-favo {
     height: 85%;
     width: 12%;
-    background-color: #F7F4EA;
+    background-color: #F9F1E8;
     border-radius: 10px;
 }
 
@@ -186,7 +187,7 @@ door display flex en justify-content: space-between toe te passen krijg ik ze zo
 .button-eye {
     height: 85%;
     width: 12%;
-    background-color: #F7F4EA;
+    background-color: #F9F1E8;
     border-radius: 10px;
 }
 
@@ -205,25 +206,25 @@ article img {
 }
 
 /* een pictures-section om inhoud strak bij elkaar te houden */
-.pictures-section{
+.pictures-section {
     height: 450px;
     width: 100%;
-    
+
 }
 
 /* hier style ik de div waar de titel in komt te staan, inhoud staat mooi gecentreerd */
-.titel-pictures-div{
+.titel-pictures-div {
     height: 70px;
     width: 100%;
     place-content: center;
     text-align: center;
-    background-color:#826851;
+    background-color: #826851;
 }
 
 /* in de pictures-outer-div heb ik de pictures-div staan, in pictures-div heb ik de width staan op 80%. 
 dit zorgt ervoor dat afbeeldingen niet aan de rand van de website komt te staan maar wat meer in het midden. 
 Hierdoor krijg je 20% te zien zonder een background-color dus heb ik een outer div toegevoegd die wel 100% width heeft en de background-color toegepast  */
-.pictures-outer-div{
+.pictures-outer-div {
     height: 200px;
     width: 100%;
     background-color: #826851;
@@ -232,23 +233,23 @@ Hierdoor krijg je 20% te zien zonder een background-color dus heb ik een outer d
 }
 
 /* dit is de div waar de scroll-container in zit, dankzij deze div kan ik de scroll-container goed positioneren */
-.pictures-div{
+.pictures-div {
     height: 200px;
     width: 80%;
     display: grid;
     place-content: center;
     /* grid-template-columns: 1fr 1fr 1fr 1fr auto; */
-    background-color:#826851;
+    background-color: #826851;
 }
 
 /* Hier bepaal ik het formaat van de afbeeldingen in de picture-div. */
-.pictures-div img{
+.pictures-div img {
     height: 190px;
     width: 210px;
 }
 
 /* zorgt ervoor dat de text onder de afbeeldingen netjes gecentreerd wordt */
-.text-pictures-div{
+.text-pictures-div {
     height: 100px;
     width: 100%;
     place-content: center;
@@ -257,41 +258,40 @@ Hierdoor krijg je 20% te zien zonder een background-color dus heb ik een outer d
 }
 
 /* margin-left zorgt hier ervoor dat content in de footer niet onder header komt te staan ook gebruik ik place-items:center om de socials div in de footer te centreren*/
-footer{
+footer {
     margin-left: 75px;
     background-color: #826851;
     place-items: center;
-    
+
 }
 
 /* stylen van socials div, met grid heb ik ervoor gezorgd dat alle 3 de namen netjes naast elkaar komen te staan */
-.socials{
+.socials {
     height: 100px;
     width: 50%;
     display: grid;
     grid-template-columns: 1fr 1fr auto;
     place-content: center;
-    
+
 }
 
 /* grootte p van socials */
-.socials p{
+.socials p {
     font-size: 2rem;
 }
 
 /* maakt de scroll-container scrolbaar */
 div.scroll-container {
-  background-color: #333;
-  overflow: auto;
-  white-space: nowrap;
-  padding: 10px;
-  width: 100%;
-  height: 220px;
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+    width: 100%;
+    height: 220px;
 
 }
 
 /* met padding zorg ik ervoor dat er ruimte komt tussen de afbeeldingen*/
 div.scroll-container img {
-  padding: 10px;
+    padding: 10px;
 }
-

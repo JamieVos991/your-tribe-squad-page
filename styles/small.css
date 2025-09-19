@@ -1,30 +1,183 @@
-@media (max-width: 600px) {
-    .sidebar {
-        position: fixed;
-        width: 100%;
-        height: 70px;
+/* Mediaquery voor een moderne mobiele telefoon (max 600px breed)
+   De squadpage wordt beter leesbaar op telefoons */
 
+@media (max-width: 600px) {
+
+    /* Body wordt smaller zodat de content past in de breedte */
+    body {
+        width: 90%;
     }
 
-.button-container{
-    display: flex;
-    height: 35px;
-    width: 10%;
-    margin: px;
-    justify-items: center;
-    flex-direction: row;
-}
+    /* Sidebar verandert in horizontale header */
+    .sidebar {
+        /* laat vaststaan bovenaan */
+        position: fixed;
+        /* zet de buttons naast elkaar */
+        display: flex;
+        /* zit tegen de bovenkant van het scherm */
+        top: 0;
+        /* zit tegen de linkerkant van het scherm */
+        left: 0;
+        /* volledige breedte */
+        width: 100%;
+        /* hoogte in px van header */
+        height: 70px;
+        /* schaduw van de header */
+        box-shadow: 1px 1px 6px rgba(0, 0, 0.12);
+    }
 
-.button{
-align-items: center;
-border-radius: 100%;
-padding: 20px;
 
-}
+    /* Container voor buttons in de header */
+    .button-container {
+        display: flex;
+        /* ruimte tussen de buttons */
+        gap: 3px;
+        /* horizontaal */
+        flex-direction: row;
+        width: 100%;
+        /* hoogte past zich automatisch aan aan de content */
+        height: auto;
+    }
 
-.content{
-display: grid;
-grid-template-columns: 1fr ;
-}
 
+    /* Styling voor de buttons */
+    .button {
+        /* breedte van de button */
+        width: 44px;
+        /* hoogte van de button */
+        height: 44px;
+        /* button wordt rond */
+        border-radius: 50%;
+        /* geen binnenruimte */
+        padding: 0;
+    }
+
+
+    /* Eerste button schuift een beetje op in de header  */
+    .button:nth-child(1) {
+        /* button schuift met 5% naar rechts */
+        margin-left: 5%;
+    }
+
+
+    /* Grootte van de iconen in de buttons */
+    .button img {
+        width: 25px;
+        height: 25px;
+    }
+
+
+    /* Laatste button schuift naar de rechterkant in de header */
+    .sidebar .button:last-child {
+        /* button schuift helemaal naar rechts */
+        margin-left: auto;
+        /* button schuift met 5% naar links vanaf de rechterkant */
+        margin-right: 5%;
+    }
+
+
+    /* Main wordt het hele scherm */
+    main {
+        /* geen margin */
+        margin: 0;
+        /* geen binnenruimte */
+        padding: 0;
+        /* hele scherm */
+        width: 100%;
+    }
+
+
+    /* Styling voor buttons favo & eye in de articles */
+    .article-buttons .button-favo,
+    .article-buttons .button-eye {
+        display: flex;
+        /* icoon verticaal centreren */
+        align-items: center;
+        /* icoon horizontaal centreren */
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        padding: 0;
+        /* ruimte om de button heen */
+        margin: 10px;
+        /* maakt de hoeken een beetje afgerond */
+        border-radius: 10px;
+    }
+
+
+    /* Iconen in de article-buttons */
+    .article-buttons .button-favo img,
+    .article-buttons .button-eye img {
+        width: 22px;
+        height: 22px;
+    }
+
+
+    /* Ruimte tussen content en img in article-left */
+    .article-left {
+        gap: 0rem;
+    }
+
+
+    /* Ruimte tussen content en img in article-left */
+    .article-info {
+        /* andere achtergrondkleur */
+        background-color: #DEA8A2;
+        /* maakt de hoeken een beetje afgerond */
+        border-radius: 10px;
+    }
+
+
+    /* Ruimte tussen content en img in article-left */
+    .article-right {
+        /* schuift elke article-right naar de rechterkant */
+        margin-left: 160px;
+        gap: 0rem;
+    }
+
+
+    /* Titel */
+    .titel-section h1 {
+        width: 100%;
+        /* ruimte boven de titel */
+        margin-top: 6rem;
+        /* geen ruimte onder de titel */
+        margin-bottom: 0;
+        /* tekstgrootte */
+        font-size: 3rem;
+        /* tekst horixontaal centreren */
+        text-align: center;
+    }
+
+
+    /* Ondertitel */
+    .titel-section p {
+        width: 100%;
+        margin-top: -6rem;
+        font-size: 10px;
+        text-align: center;
+        color: grey;
+        /* transparantie */
+        opacity: 0.6;
+    }
+
+
+    /* Footer onderaan */
+    footer {
+        /* grid-layout */
+        display: grid;
+        /* één kolom */
+        grid-template-columns: 1fr;
+        /* geen margin */
+        margin: 0;
+        /* breedte van de body */
+        width: 100%;
+        height: 150px;
+
+        /* Geneste selector dat de tekstkleur veranderd */
+        p {
+            color: #F9F1E8;
+            text-shadow: 2px 2px 4px rgba(219, 210, 210, 0.4);
+        }
+    }
 }
